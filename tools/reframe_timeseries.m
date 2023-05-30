@@ -7,6 +7,6 @@ directory_target = strcat("use_cases/use_case_",use_case_id,"/");
 file_target = "x_Irr.csv" ;
 
 fprintf("reframing time series from %s\n",strcat(directory_source,file_source));
-fprintf("to %s\n",strcatd(directory_target,file_target));
+fprintf("to %s\n",strcat(directory_target,file_target));
 
 
