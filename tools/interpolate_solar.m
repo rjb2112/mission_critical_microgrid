@@ -6,15 +6,15 @@ fprintf("_______________________________________\n");
 clear X YY MM DD hh mm y1 y2 y3 y4 Y i i1 i2 n
 clear step_x step_y1 step_y2 step_y3 step_y4 step_t
 clear directory_source file_source filename
-clear directory_target file_target fileid
+clear directory_destination file_destination fileid
 
 
 
-directory_source = "system_under_study";
+directory_source = "system_under_study/model_environment";
 file_source = "6752174_-27.26_135.07_2020.csv" ;
 
-directory_target = "system_under_study";
-file_target = "Irr_T_1s.csv" ;
+directory_destination = "system_under_study";
+file_destination = "Irr_T_1s.csv" ;
 
 filename = strcat(directory_source,"/",file_source);
 fileid = fopen(filename);
@@ -149,26 +149,26 @@ M_GHI = [ M_D Y(:,3) ];
 M_DHI = [ M_D Y(:,4) ];
 
 tic
-file_target = "model_environment_annual_T_1s.csv" ;
-filename = strcat(directory_target,"/",file_target);
+file_destination = "model_environment_annual_T_1s.csv" ;
+filename = strcat(directory_destination,"/",file_destination);
 writematrix(M_T,filename);
 fprintf("  wrote %s in %.1f seconds.\n", filename, toc);
 
 tic
-file_target = "model_environment_annual_DNI_1s.csv" ;
-filename = strcat(directory_target,"/",file_target);
+file_destination = "model_environment_annual_DNI_1s.csv" ;
+filename = strcat(directory_destination,"/",file_destination);
 writematrix(M_DNI,filename);
 fprintf("  wrote %s in %.1f seconds.\n", filename, toc);
 
 tic
-file_target = "model_environment_annual_GHI_1s.csv" ;
-filename = strcat(directory_target,"/",file_target);
+file_destination = "model_environment_annual_GHI_1s.csv" ;
+filename = strcat(directory_destination,"/",file_destination);
 writematrix(M_GHI,filename);
 fprintf("  wrote %s in %.1f seconds.\n", filename, toc);
 
 tic
-file_target = "model_environment_annual_DHI_1s.csv" ;
-filename = strcat(directory_target,"/",file_target);
+file_destination = "model_environment_annual_DHI_1s.csv" ;
+filename = strcat(directory_destination,"/",file_destination);
 writematrix(M_DHI,filename);
 fprintf("  wrote %s in %.1f seconds.\n", filename, toc);
 
@@ -177,7 +177,7 @@ fprintf("  wrote %s in %.1f seconds.\n", filename, toc);
 clear X YY MM DD hh mm y1 y2 y3 y4 Y i i1 i2 n ans
 clear step_x step_y1 step_y2 step_y3 step_y4 step_t
 clear directory_source file_source filename
-clear directory_target file_target fileid
+clear directory_destination file_destination fileid
 clear D M_D M_T M_DNI M_GHI M_DHI
 
 
@@ -205,25 +205,25 @@ fprintf("complete with interpolating solar dataset.\n\n");
 % if future need for the data without associated datetimes
 
 % tic
-% file_target = "model_environment_T_1s_dateless.csv" ;
-% filename = strcat(directory_target,"/",file_target);
+% file_destination = "model_environment_T_1s_dateless.csv" ;
+% filename = strcat(directory_destination,"/",file_destination);
 % writematrix(Y(:,1),filename);
 % fprintf("  wrote %s in %.1f seconds.\n", filename, toc);
 
 % tic
-% file_target = "model_environment_DNI_1s_dateless.csv" ;
-% filename = strcat(directory_target,"/",file_target);
+% file_destination = "model_environment_DNI_1s_dateless.csv" ;
+% filename = strcat(directory_destination,"/",file_destination);
 % writematrix(Y(:,2),filename);
 % fprintf("  wrote %s in %.1f seconds.\n", filename, toc);
 
 % tic
-% file_target = "model_environment_GHI_1s_dateless.csv" ;
-% filename = strcat(directory_target,"/",file_target);
+% file_destination = "model_environment_GHI_1s_dateless.csv" ;
+% filename = strcat(directory_destination,"/",file_destination);
 % writematrix(Y(:,3),filename);
 % fprintf("  wrote %s in %.1f seconds.\n", filename, toc);
 
 % tic
-% file_target = "model_environment_DHI_1s_dateless.csv" ;
-% filename = strcat(directory_target,"/",file_target);
+% file_destination = "model_environment_DHI_1s_dateless.csv" ;
+% filename = strcat(directory_destination,"/",file_destination);
 % writematrix(Y(:,4),filename);
 % fprintf("  wrote %s in %.1f seconds.\n", filename, toc);
