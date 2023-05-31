@@ -1,6 +1,6 @@
 % copy files to current simulation
 
-function copy_files_to_current_simulation(alternative) 
+function copy_files_to_current_simulation(use_case_id, alternative) 
 
 directory_source = strcat("use_cases/use_case_",use_case_id,"/",alternative);
 file_source = "x_T_1s.csv" ;
