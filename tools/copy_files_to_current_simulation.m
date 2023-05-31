@@ -1,4 +1,4 @@
-% copy files to current simulation
+% copy files to current simulation  THIS IS THE MOST RECENT, and ONLY IN PATH
 
 function copy_files_to_current_simulation(use_case_id, alternative_id)
 
