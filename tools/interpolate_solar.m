@@ -13,7 +13,7 @@ clear directory_destination file_destination fileid
 directory_source = "system_under_study/model_environment";
 file_source = "6752174_-27.26_135.07_2020.csv" ;
 
-directory_destination = "system_under_study";
+directory_destination = "system_under_study/model_environment";
 file_destination = "Irr_T_1s.csv" ;
 
 filename = strcat(directory_source,"/",file_source);
