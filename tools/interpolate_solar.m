@@ -10,11 +10,10 @@ clear directory_target file_target fileid
 
 
 
-directory_source = "system_under_study";
+directory_source = "system_under_study/model_environment";
 file_source = "6752174_-27.26_135.07_2020.csv" ;
 
-directory_target = "system_under_study";
-file_target = "Irr_T_1s.csv" ;
+directory_target = "system_under_study/model_environment";
 
 filename = strcat(directory_source,"/",file_source);
 fileid = fopen(filename);
