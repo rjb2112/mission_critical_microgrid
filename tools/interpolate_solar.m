@@ -1,4 +1,3 @@
-
 fprintf("_______________________________________\n");
 fprintf("Interpolating solar environmental data.\n");
 fprintf("_______________________________________\n");
