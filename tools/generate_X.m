@@ -25,5 +25,4 @@ copy_files_to_current_simulation(use_case_id,alternative_id);  % use case id alr
 
 fprintf("%.2f\n",toc);
 
-load_x_into_workspace      % load all x_input .csv files into Simulink timeseries
 
