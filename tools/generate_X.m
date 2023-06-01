@@ -1,6 +1,7 @@
   tic;
   code_section_number = 300;
   code_section_string = "generate_X";
+  fprinft("\n");
   fprintf("%3d     %-40s",code_section_number,code_section_string);
 
 alternative_id = "a0";
