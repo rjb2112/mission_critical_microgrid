@@ -13,12 +13,14 @@ tn  = seconds(t2 - t1) + 1          ;
 
 t1s = string(t1,datetimeFormatSpec) ;
 t2s = string(t2,datetimeFormatSpec) ;
+tns = string(tn)                    ;
+
 
 % arrays
 
-t   = 1:1:tn                        ;
-T   = transpose(t1:seconds(1):t2)   ;
-Ts  = string(T,datetimeFormatSpec)  ;
+T.dt    = transpose(t1:seconds(1):t2)     ;   % datetime type format array
+T.str   = string(T.dt,datetimeFormatSpec) ;   % string type datetime array
+T.clock = transpose(1:1:tn)               ;   % simulink time clock
 
   fprintf("%.2f",toc);
 
