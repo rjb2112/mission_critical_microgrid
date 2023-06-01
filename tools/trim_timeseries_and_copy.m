@@ -6,10 +6,10 @@
 
 function trim_timeseries_and_copy(t1,t2,d1,f1,d2,f2)
 
-directory_source = d1 ;
-directory_target = d2 ;
-file_source      = f1 ;
-file_target      = f2 ;
+directory_source      = d1 ;
+directory_destination = d2 ;
+file_source           = f1 ;
+file_destination      = f2 ;
 
 filename = strcat(directory_source,"/",file_source);
 fileid = fopen(filename);
@@ -38,8 +38,8 @@ t_earliest = min(D) ;
 t_latest   = max(D) ;
 assert(t1 >= t_earliest) ;
 assert(t2 <= t_latest  ) ;
-i1 = find(D == t1)
-i2 = find(D == t2)
+i1 = find(D == t1) ;
+i2 = find(D == t2) ;
 
 
 % generate trimmed timeseries and dataset
@@ -54,8 +54,8 @@ Y = X_Y(i1:i2,:) ;
 
 
 tic
-filename = strcat(directory_target,"/",file_target);
+filename = strcat(directory_destination,"/",file_destination);
 writematrix(Y,filename);
-fprintf("  wrote %s in %.1f seconds.\n", filename, toc);
+% fprintf("  wrote %s in %.1f seconds.\n", filename, toc);
 
 end

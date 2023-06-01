@@ -1,3 +1,15 @@
+% params_simulation_environment
+  tic;
+  code_section_number = 100;
+  code_section_string = "params_simulation_environment";
+  fprintf("%3d     %-40s",code_section_number,code_section_string);
+
+
+
+% Start of script.
+
+datetimeFormatSpec = 'yyyy-MM-dd HH:mm:ss';
+
 warning('off', 'MATLAB:MKDIR:DirectoryExists');
 
 cd tools
@@ -6,6 +18,7 @@ cd tools
 
 handle_build_source_datasets = @build_source_datasets   ;
 handle_interpolate_solar     = @interpolate_solar       ;
+handle_generate_X            = @generate_X              ;
 handle_load_x_into_workspace = @load_x_into_workspace   ;
 
 % ---------- USE CASE, TIME HORIZON, DECISION MAKING
@@ -22,11 +35,11 @@ handle_copy_files_to_current_simulation = @copy_files_to_current_simulation  ;
 
 % ---------- SIMULATION
 
-handle_simulate_microgrid_and_mission_coupled_modelset = @simulate_microgrid_and_mission_coupled_modelset
+handle_simulate_microgrid_and_mission_coupled_modelset = @simulate_microgrid_and_mission_coupled_modelset ;
 
 
 
 
 cd ../
 
-
+fprintf("%.2f\n",toc);
