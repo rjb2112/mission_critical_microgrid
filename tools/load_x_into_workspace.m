@@ -14,6 +14,8 @@ clear sim_duration sim_clock
 sim_duration = seconds( t2 - t1 ) +1         ;
 sim_clock    = transpose( 1:1:sim_duration ) ;
 T            = sim_clock                     ;
+X = struct ;
+
 
 directory_source = "current_simulation";
 
