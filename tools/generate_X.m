@@ -6,8 +6,12 @@
 
 alternative_id = "a0";
 
-directory_source = "system_under_study/model_environment";
 directory_destination = strcat("use_cases/use_case_",use_case_id,"/",alternative_id);
+
+
+
+directory_source = "system_under_study/model_environment";
+
 d1 = directory_source      ;
 d2 = directory_destination ;
 
@@ -18,6 +22,15 @@ trim_timeseries_and_copy(t1,t2,d1,f1,d2,f2);
 f1 = "model_environment_annual_GHI_1s.csv";
 f2 = "X_Irr.csv";
 trim_timeseries_and_copy(t1,t2,d1,f1,d2,f2);
+
+
+
+directory_source = "system_under_study/model_microgrid";
+
+f1 = "model_load_E_req_1.csv";
+f2 = "load_E_req_1.csv";
+trim_timeseries_and_copy(t1,t2,d1,f1,d2,f2);
+
 
 
 
