@@ -26,6 +26,7 @@ end
 % -----   L O A D   -----
 
 generate_model_load_requirements_1
+generate_model_load_requirements_2
 
 
   fprintf("%.2f\n",toc);
