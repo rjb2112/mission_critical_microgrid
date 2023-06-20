@@ -17,10 +17,12 @@ d1 = directory_source      ;
 f1 = "model_environment_annual_T_1s.csv";
 f2 = "x_Temp.csv";
 trim_timeseries_and_copy(t1,t2,d1,f1,d2,f2);
+fprintf("%s - ",f2);
 
 f1 = "model_environment_annual_GHI_1s.csv";
 f2 = "x_Irr.csv";
 trim_timeseries_and_copy(t1,t2,d1,f1,d2,f2);
+fprintf("%s - ",f2);
 
 
 
@@ -30,33 +32,39 @@ d1 = directory_source      ;
 f1 = "load_E_req_1.csv";
 f2 = "x_load_E_req_1.csv";
 trim_timeseries_and_copy(t1,t2,d1,f1,d2,f2);
+fprintf("%s - ",f2);
 
 f1 = "load_E_req_2.csv";
 f2 = "x_load_E_req_2.csv";
 trim_timeseries_and_copy(t1,t2,d1,f1,d2,f2);
+fprintf("%s - ",f2);
 
 
 f1 = "load_priority_1.csv";
 f2 = "x_load_priority_1.csv";
 trim_timeseries_and_copy(t1,t2,d1,f1,d2,f2);
+fprintf("%s - ",f2);
 
 f1 = "load_priority_2.csv";
 f2 = "x_load_priority_2.csv";
 trim_timeseries_and_copy(t1,t2,d1,f1,d2,f2);
+fprintf("%s - ",f2);
 
 f1 = "load_connected_1.csv";
 f2 = "x_load_connected_1.csv";
 trim_timeseries_and_copy(t1,t2,d1,f1,d2,f2);
+fprintf("%s - ",f2);
 
 f1 = "load_connected_2.csv";
 f2 = "x_load_connected_2.csv";
 trim_timeseries_and_copy(t1,t2,d1,f1,d2,f2);
+fprintf("%s - ",f2);
 
-
-
+fprintf("X in workspace.  ");
 
 
 copy_files_to_current_simulation(use_case_id,alternative_id);  % use case id already known
+fprintf("Files in current folder.\n");
 
 fprintf("%.2f\n",toc);
 
