@@ -11,11 +11,15 @@ directory_source = "current_simulation";
 
 X = struct ;
 
-i=1; X(i).name = "Irr";  X(i).filename = strcat("X_",X(i).name,".csv") ;
-i=2; X(i).name = "Temp"; X(i).filename = strcat("X_",X(i).name,".csv") ;
+i=1; X(i).name = "Irr";
+i=2; X(i).name = "Temp";
+i=3; X(i).name = "load_E_req_1";
+i=4; X(i).name = "load_E_req_2";
+
 
 
 for i=1:size(X,2)
+ X(i).filename = strcat("X_",X(i).name,".csv") ;
 file_source = X(i).filename;
 filename = strcat(directory_source,"/",file_source);
 fileid = fopen(filename);

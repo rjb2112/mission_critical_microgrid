@@ -6,8 +6,8 @@
 
 
 if (option_generate_datetime_vector)
-  t1 = datetime(2001, 1, 1, 0, 0, 0);
-  t2 = datetime(2001,12,31,23,59,59);
+  t1 = datetime(2020, 1, 1, 0, 0, 0);
+  t2 = datetime(2020,12,31,23,59,59);
   T.dv = datevec(t1:seconds(1):t2);
   clear t1 t2
 end

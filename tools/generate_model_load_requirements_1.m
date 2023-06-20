@@ -2,6 +2,13 @@
 % given 24 hours cycle
 % model is ideal, no variation
 
+  tic;
+  code_section_number = 201;
+  code_section_string = "set_time_horizon";
+  fprintf("%3d     %-40s",code_section_number,code_section_string);
+
+
+
 directory_source = "system_under_study/model_microgrid";
 file_source = "model_load_1_ideal_24h.csv";
 
@@ -44,9 +51,12 @@ load_E_req_1(i1:i2,1) = L.req_total;
 end
 
 filename = strcat(directory_destination,"/",file_destination);
-writematrix([dv load_E_req_1],filename);
+writematrix([T.dv load_E_req_1],filename);
 fprintf("  wrote %s in %.1f seconds.\n", filename, toc);
 
+
+
+  fprintf("%.2f",toc);
 
 
 

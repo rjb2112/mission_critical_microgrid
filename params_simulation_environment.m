@@ -29,9 +29,10 @@ handle_set_time_horizon      = @set_time_horizon        ;
 
 % ---------- FILE HANDLING
 
-handle_trim_timeseries_and_copy         = @trim_timeseries_and_copy           ;
-handle_copy_files_to_current_simulation = @copy_files_to_current_simulation   ;
-generate_model_load_requirements_1      = @generate_model_load_requirements_1 ;
+handle_trim_timeseries_and_copy           = @trim_timeseries_and_copy           ;
+handle_copy_files_to_current_simulation   = @copy_files_to_current_simulation   ;
+handle_generate_model_load_requirements_1 = @generate_model_load_requirements_1 ;
+handle_generate_model_load_requirements_2 = @generate_model_load_requirements_2 ;
 
 
 
