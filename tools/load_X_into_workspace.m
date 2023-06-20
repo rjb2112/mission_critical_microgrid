@@ -17,7 +17,8 @@ i=3; X(i).name = "load_E_req_1";
 i=4; X(i).name = "load_E_req_2";
 i=5; X(i).name = "load_priority_1";
 i=6; X(i).name = "load_priority_2";
-
+i=7; X(i).name = "load_connected_1";
+i=8; X(i).name = "load_connected_2";
 
 for i=1:size(X,2)
  X(i).filename = strcat("x_",X(i).name,".csv") ;

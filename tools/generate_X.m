@@ -44,6 +44,16 @@ f1 = "load_priority_2.csv";
 f2 = "x_load_priority_2.csv";
 trim_timeseries_and_copy(t1,t2,d1,f1,d2,f2);
 
+f1 = "load_connected_1.csv";
+f2 = "x_load_connected_1.csv";
+trim_timeseries_and_copy(t1,t2,d1,f1,d2,f2);
+
+f1 = "load_connected_2.csv";
+f2 = "x_load_connected_2.csv";
+trim_timeseries_and_copy(t1,t2,d1,f1,d2,f2);
+
+
+
 
 
 copy_files_to_current_simulation(use_case_id,alternative_id);  % use case id already known
