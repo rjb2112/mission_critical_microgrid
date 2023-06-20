@@ -3,51 +3,19 @@
 function copy_files_to_current_simulation(use_case_id, alternative_id)
 
 directory_source = strcat("use_cases/use_case_",use_case_id,"/",alternative_id);
-file_source = "x_Temp.csv" ;
-filename_source = strcat(directory_source,"/",file_source) ;
-
 directory_destination = strcat("current_simulation");
-file_destination = "x_Temp.csv" ;
+
+Z = dir;
+
+for i=3:size(Z,1) % .. and . are two "files" in dir, start at 3
+file_source      = Z(i).name;
+file_destination = Z(i).name;
+filename_source      = strcat(directory_source,"/",file_source) ;
 filename_destination = strcat(directory_destination,"/",file_destination) ;
-
-
 copyfile(filename_source, filename_destination) ;
 
+end
 
-
-
-directory_source = strcat("use_cases/use_case_",use_case_id,"/",alternative_id);
-file_source = "x_Irr.csv" ;
-filename_source = strcat(directory_source,"/",file_source) ;
-
-directory_destination = strcat("current_simulation");
-file_destination = "x_Irr.csv" ;
-filename_destination = strcat(directory_destination,"/",file_destination) ;
-
-copyfile(filename_source, filename_destination) ;
-
-
-
-directory_source = strcat("use_cases/use_case_",use_case_id,"/",alternative_id);
-file_source = "load_E_req_1.csv" ;
-filename_source = strcat(directory_source,"/",file_source) ;
-
-directory_destination = strcat("current_simulation");
-file_destination = "x_load_E_req_1.csv" ;
-filename_destination = strcat(directory_destination,"/",file_destination) ;
-
-copyfile(filename_source, filename_destination) ;
-
-
-
-
-directory_source = strcat("use_cases/use_case_",use_case_id,"/",alternative_id);
-file_source = "load_E_req_2.csv" ;
-filename_source = strcat(directory_source,"/",file_source) ;
-
-directory_destination = strcat("current_simulation");
-file_destination = "x_load_E_req_2.csv" ;
-filename_destination = strcat(directory_destination,"/",file_destination) ;
 
 
 copyfile(filename_source, filename_destination) ;
