@@ -37,7 +37,7 @@ trim_timeseries_and_copy(t1,t2,d1,f1,d2,f2);
 
 
 f1 = "load_priority_1.csv";
-f2 = "x_load_priority.csv";
+f2 = "x_load_priority_1.csv";
 trim_timeseries_and_copy(t1,t2,d1,f1,d2,f2);
 
 f1 = "load_priority_2.csv";
