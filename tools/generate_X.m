@@ -28,11 +28,11 @@ directory_source = "system_under_study/model_microgrid";
 d1 = directory_source      ;
 
 f1 = "load_E_req_1.csv";
-f2 = "load_E_req_1.csv";
+f2 = "X_load_E_req_1.csv";
 trim_timeseries_and_copy(t1,t2,d1,f1,d2,f2);
 
 f1 = "load_E_req_2.csv";
-f2 = "load_E_req_2.csv";
+f2 = "X_load_E_req_2.csv";
 trim_timeseries_and_copy(t1,t2,d1,f1,d2,f2);
 
 
