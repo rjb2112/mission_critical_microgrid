@@ -10,7 +10,7 @@
 
 
 directory_source = "system_under_study/model_microgrid";
-file_source = "model_load_1_ideal_24h.csv";
+file_source = "model_load_E_req_nominal_24h_1.csv";
 
 
 directory_destination = "system_under_study/model_microgrid";

@@ -27,7 +27,8 @@ end
 
 generate_model_load_requirements_1
 generate_model_load_requirements_2
-
+generate_model_load_priority_1
+generate_model_load_priority_2
 
   fprintf("%.2f\n",toc);
 

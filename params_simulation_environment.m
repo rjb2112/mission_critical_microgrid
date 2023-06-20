@@ -33,7 +33,8 @@ handle_trim_timeseries_and_copy           = @trim_timeseries_and_copy           
 handle_copy_files_to_current_simulation   = @copy_files_to_current_simulation   ;
 handle_generate_model_load_requirements_1 = @generate_model_load_requirements_1 ;
 handle_generate_model_load_requirements_2 = @generate_model_load_requirements_2 ;
-
+handle_generate_model_load_priority_1     = @generate_model_load_priority_1     ;
+handle_generate_model_load_priority_2     = @generate_model_load_priority_2     ;
 
 
 
