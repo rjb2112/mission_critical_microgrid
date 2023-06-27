@@ -20,7 +20,7 @@ handle_build_source_datasets = @build_source_datasets   ;
 handle_interpolate_solar     = @interpolate_solar       ;
 handle_generate_X            = @generate_X              ;
 handle_load_x_into_workspace = @load_x_into_workspace   ;
-handle_new_x_build           = @new_x_build
+handle_new_x_build           = @new_x_build             ;
 
 % ---------- USE CASE, TIME HORIZON, DECISION MAKING
 
