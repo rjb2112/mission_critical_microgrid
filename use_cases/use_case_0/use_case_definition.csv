@@ -1,0 +1,5 @@
+use case id,0
+simulation time horizon start, 2020-01-03 05:16:00
+simulation time horizon end, 2020-01-03 22:45:04
+decision time start, 2020-01-03 11:00:00
+decision time end, 2020-01-03 22:00:00

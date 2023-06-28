@@ -1,0 +1,5 @@
+mission_type,time_start,time_finish,target_location,quantity
+surveillance, 2020-01-03 07:00:00, 2020-01-03 10:00:00,10,
+surveillance, 2020-01-03 07:30:00, 2020-01-03 09:30:00,11,
+transportation,, 2020-01-03 12:00:00,2,6
+transportation,, 2020-01-03 13:00:00,3,7
